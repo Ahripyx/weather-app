@@ -28,3 +28,9 @@ const weatherCodeMap = {
     96: 'Thunderstorm with slight hail',
     99: 'Thunderstorm with heavy hail',
 };
+
+export function getWeatherDescription(code){
+    return weatherCodeMap[code] || 'Unknown weather condition';
+}
+
+export default getWeatherDescription;
