@@ -1,5 +1,6 @@
 import * as React from "react";
 import { getWeatherDescription } from "../utils/WeatherCodes";
+import '../styles.css'
 
 function formatDate(dateString) {
     return new Date(dateString).toLocaleDateString("en-US", {
@@ -148,22 +149,6 @@ function Forecast() {
                     )}
                 </article>
                 
-            </section>
-
-
-            {/* Values hard coded until search engine works */}
-            <section>
-                <article>
-                    <h3>Current Weather</h3>
-                    <p>City:--</p>
-                    <p>Temperature: --</p>
-                    <p>Condition: --</p>
-                </article>
-
-                <article>
-                    <h3>Upcoming Forecast</h3>
-                    <p>No forecast panel yet until search yabba dabba doo</p>
-                </article>
             </section>
         </main>
     );
